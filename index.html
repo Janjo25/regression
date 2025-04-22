@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Regresión Lineal – Idioma / Grado</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 2rem auto; }
+        h1, h2 { text-align: center; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
+        th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: center; }
+        th { background: #f0f0f0; }
+        #metrics { background: #f9f9f9; padding: 1rem; border-radius: 6px; margin-bottom: 1rem; }
+        #chart_div { width: 100%; height: 400px; }
+    </style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+
+<h2>Datos: Total de Estudiantes por Idioma y Grado</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Idioma</th>
+        <th>Total</th>
+        <th>Primero</th>
+        <th>Segundo</th>
+        <th>Tercero</th>
+        <th>Cuarto</th>
+        <th>Quinto</th>
+        <th>Sexto</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Total</td>
+        <td>2,348,410</td>
+        <td>489,191</td>
+        <td>432,499</td>
+        <td>401,057</td>
+        <td>370,421</td>
+        <td>342,629</td>
+        <td>312,613</td>
+    </tr>
+    <tr>
+        <td>Maya</td>
+        <td>915,133</td>
+        <td>195,342</td>
+        <td>175,090</td>
+        <td>159,870</td>
+        <td>143,782</td>
+        <td>127,522</td>
+        <td>113,527</td>
+    </tr>
+    <tr>
+        <td>Garífuna</td>
+        <td>501</td>
+        <td>98</td>
+        <td>78</td>
+        <td>78</td>
+        <td>72</td>
+        <td>95</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td>Xinka</td>
+        <td>166</td>
+        <td>77</td>
+        <td>29</td>
+        <td>14</td>
+        <td>16</td>
+        <td>16</td>
+        <td>14</td>
+    </tr>
+    <tr>
+        <td>Mestizo / Ladino</td>
+        <td>1,430,025</td>
+        <td>293,171</td>
+        <td>256,877</td>
+        <td>240,653</td>
+        <td>226,146</td>
+        <td>214,577</td>
+        <td>198,601</td>
+    </tr>
+    <tr>
+        <td>Otro</td>
+        <td>2,453</td>
+        <td>480</td>
+        <td>402</td>
+        <td>423</td>
+        <td>385</td>
+        <td>389</td>
+        <td>374</td>
+    </tr>
+    <tr>
+        <td>Ignorado</td>
+        <td>132</td>
+        <td>23</td>
+        <td>23</td>
+        <td>19</td>
+        <td>20</td>
+        <td>30</td>
+        <td>17</td>
+    </tr>
+    </tbody>
+</table>
+
+<h2>Regresión Lineal: Total de Estudiantes por Grado</h2>
+<div id="log">Calculando regresión…</div>
+<div id="chart_div" style="width: 100%; height: 400px;"></div>
+
+<script type="module" src="./08-linear-regression.js"></script>
+
+</body>
+</html>
